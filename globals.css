@@ -1,0 +1,54 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+/* Мраморный фон */
+body {
+  background-color: #0a0a0a;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(100, 100, 100, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(100, 100, 100, 0.03) 0%, transparent 50%),
+    linear-gradient(45deg, #111 25%, transparent 25%),
+    linear-gradient(-45deg, #111 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #111 75%),
+    linear-gradient(-45deg, transparent 75%, #111 75%);
+  background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-position: 0 0, 0 0, 0 0, 0 10px, 10px -10px, -10px 0px;
+  color: #ffffff;
+}
+
+/* Шрифт для заголовков */
+h1, h2, h3, h4, .font-elegant {
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+}
+
+/* Золотой цвет */
+.text-gold {
+  color: #D4AF37;
+}
+
+.border-gold {
+  border-color: #D4AF37;
+}
+
+.bg-gold {
+  background-color: #D4AF37;
+}
+
+/* Плавные переходы */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Скрыть scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
